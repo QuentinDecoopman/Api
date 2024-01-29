@@ -1,33 +1,32 @@
 # Api
 
-Petite Api poour projet perso
+Petite Api pour projet perso.
 
 ## Demo
 
-[Lien vers l'api](<[URL](https://api-e79o.onrender.com/)>)
+[Lien vers l'api](https://api-e79o.onrender.com/)
 
 ## Getting Started
 
-npm start
+    npm install
+
+    npm start
 
 ## Prerequisites
 
-Node.js
-npm
+- Node.js
+- Express
+- npm
 
 ## Built With
 
 - [Express](https://expressjs.com/)
 - [Node](https://nodejs.org/)
-- [Mise en ligne](https://www.render.com/)
+- [Deploy with render](https://www.render.com/)
 
-<!-- ## References
+## New features
 
-URL
-
-## Author
-
-[link text](URL) -->
+Ajout de plus données prévues
 
 ## License
 

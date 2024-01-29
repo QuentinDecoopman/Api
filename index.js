@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const db = require("./DB");
 
 const PORT = 3000;
 
@@ -11,34 +12,19 @@ app.get("/", (req, res) => {
       <div>Désormais, tu dois venir utiliser l'API</div>
       <ul style="display: inline-block; margin-top: .2em">
         <li><code>GET https://api-e79o.onrender.com/users</code></li>
+        <li><code>GET https://api-e79o.onrender.com/recipes</code></li>
       </ul>
     </div>
   `);
 });
 
 app.get("/users", (req, res) => {
-  res.send(db.users);
+  res.send(db.user);
 });
 
-const db = {
-  users: [
-    {
-      id: 1,
-      name: "John",
-      password: 123,
-    },
-    {
-      id: 2,
-      name: "Jane",
-      password: 123,
-    },
-    {
-      id: 3,
-      name: "Joe",
-      password: 123,
-    },
-  ],
-};
+app.get("/recipes", (req, res) => {
+  res.send(db.recipe);
+});
 
 app.listen(PORT, () => {
   console.log(`listening on http://localhost:${PORT}`);
